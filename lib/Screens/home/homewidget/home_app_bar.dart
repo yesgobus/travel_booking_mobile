@@ -23,11 +23,11 @@ class HomeAppBar extends StatelessWidget {
               TextWidget(
                 text: 'Hi, ${GetStoreData.getStore.read('name')??""}',
                 textSize: 16,
-                color: AppColors.whiteColor,
+                color: Colors.black,
               ),
               TextWidget(
                 text: "Where You Wana go?",
-                textSize: 22,color: AppColors.whiteColor,
+                textSize: 18,color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ],

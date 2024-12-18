@@ -35,6 +35,37 @@ class _SplashPageState extends State<SplashPage> {
     });
   }
 
+
+//satya
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+          height: Get.height,
+          width: Get.width,
+          color: Colors.orange[900], // Set the background color to orange
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                PngAssetPath.splashLogo,
+                height: 110,
+                width: 170,
+              ),
+              /*TextWidget(
+                text: "",
+                textSize: 16,
+                fontWeight: FontWeight.w500,
+              ),*/
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+/*
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,4 +89,5 @@ class _SplashPageState extends State<SplashPage> {
       ),
     );
   }
+*/
 }

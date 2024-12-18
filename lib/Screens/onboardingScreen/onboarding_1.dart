@@ -24,16 +24,11 @@ class _OnboardingScreen1State extends State<OnboardingScreen1> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
-          child: Image.asset(
-            PngAssetPath.appLogo,
-            color: AppColors.whiteColor,
-            height: 150,
-            width: 150,
-          ),
+          // Removed the Image.asset widget displaying the logo
         ),
         bottomNavigationBar: Padding(
           padding:
-              EdgeInsets.symmetric(horizontal: Get.width / 6, vertical: 20),
+          EdgeInsets.symmetric(horizontal: Get.width / 6, vertical: 20),
           child: AppButton.primaryButton(
               onButtonPressed: () {
                 Get.to(() => OnboardingScreen2(),

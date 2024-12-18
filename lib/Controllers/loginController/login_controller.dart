@@ -90,10 +90,10 @@ class LoginMobileController extends GetxController {
   String _verificationCode = '';
 
   Future<void> sendOTP() async {
-    const String accountSid = 'ASK_FROM_PARASHU';
-    const String authToken = 'ASK_FROM_PARASHU';
-    const String twilioNumber = 'ASK_FROM_PARASHU';
 
+      const String accountSid = '';
+      const String authToken = '';
+      const String twilioNumber = '';
     // Generate a random 6-digit OTP code
     final Random random = Random();
     _verificationCode = '';

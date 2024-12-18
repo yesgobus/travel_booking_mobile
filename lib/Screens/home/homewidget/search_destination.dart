@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -66,7 +67,7 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
 
   GlobalKey<FormState> formkey = GlobalKey();
   PackageListController packageListController =
-      Get.put(PackageListController());
+  Get.put(PackageListController());
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -97,7 +98,7 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
                             startsearchClear = val.isEmpty;
                             placesService.getAutocomplete(val).then((value) {
                               final searchResponse =
-                                  searchAddressListFromJson(value);
+                              searchAddressListFromJson(value);
 
                               searchResults = searchResponse.predictions!;
                             });
@@ -202,7 +203,7 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
                             endsearchClear = val.isEmpty;
                             placesService.getAutocomplete(val).then((value) {
                               final searchResponse =
-                                  searchAddressListFromJson(value);
+                              searchAddressListFromJson(value);
 
                               searchResults = searchResponse.predictions!;
                             });
@@ -285,8 +286,8 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
                     child: InkWell(
                       onTap: () {
                         selectDate(context, DateTime.now(),
-                                otherDate: homeController.toDate,
-                                isFromDate: true)
+                            otherDate: homeController.toDate,
+                            isFromDate: true)
                             .then((value) {
                           homeController.fromDate = value!;
                           homeController.departureDatePost =
@@ -319,8 +320,8 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
                     child: InkWell(
                       onTap: () {
                         selectDate(context, DateTime.now(),
-                                otherDate: homeController.fromDate,
-                                isFromDate: false)
+                            otherDate: homeController.fromDate,
+                            isFromDate: false)
                             .then((value) {
                           homeController.toDate = value!;
                           homeController.returnDatePost =
@@ -372,7 +373,7 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
                     SizedBox(height: 4),
                     TextWidget(
                       text:
-                          "${homeController.adultController.text} Adults, ${homeController.roomController.text} Room",
+                      "${homeController.adultController.text} Adults, ${homeController.roomController.text} Room",
                       textSize: 17,
                       fontWeight: FontWeight.w500,
                     )
@@ -393,7 +394,7 @@ class _SearchDestinationWidgetState extends State<SearchDestinationWidget> {
                   if (formkey.currentState!.validate()) {
                     packageListController
                         .getPackage(
-                            destination: homeController.endDestController.text)
+                        destination: homeController.endDestController.text)
                         .then((value) {});
 
                     Get.toNamed(AppRoutes.packageListing);

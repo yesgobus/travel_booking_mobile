@@ -1,7 +1,8 @@
 class PngAssetPath {
   PngAssetPath._internal();
-  static const String appLogo = 'assets/images/png/yes_bus_logo.png';
-  static const String splashLogo = 'assets/images/png/yes_bus_logo_splash.png';
+  static const String appLogo = 'assets/images/png/applogo2.png';
+  // static const String splashLogo = 'assets/images/png/yes_bus_logo_splash.png';
+ static const String splashLogo = 'assets/images/png/splashloo_white.png';
   static const String otpVerification =
       'assets/images/png/otp_verification.png';
   //TODO(rahul): Delete this after api available.
@@ -19,6 +20,7 @@ class PngAssetPath {
   static const String guid = 'assets/images/png/guid.png';
   static const String offer = 'assets/images/png/offer.png';
   static const String ticket = 'assets/images/png/ticket.png';
-  static const String bgImg = 'assets/images/png/bg.png';
+  // static const String bgImg = 'assets/images/png/bg.png';
+  //static const String bgImg = 'assets/images/png/bg.png';
   static const String home_bgImg = 'assets/images/png/home-bg.jpg';
 }
